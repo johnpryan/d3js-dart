@@ -1,4 +1,4 @@
-@JS("d3")
+@JS()
 library lib.d3;
 
 import "package:js/js.dart";
@@ -22,6 +22,7 @@ import "package:func/func.dart";
 
 /// Latest patch version of module validated against: 3.5.17
 /* WARNING: export assignment not yet supported. */
+/// export as namespace d3;
 
 // Module d3
 /// The current version of D3.js.

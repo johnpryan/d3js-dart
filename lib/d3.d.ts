@@ -8,7 +8,7 @@
 // Latest patch version of module validated against: 3.5.17
 
 export = d3;
-export as namespace d3;
+// export as namespace d3;
 
 declare namespace d3 {
     /**
