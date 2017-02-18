@@ -3192,7 +3192,7 @@ declare namespace d3 {
             }
         }
 
-        interface Tree<T> {
+        interface Tree<T extends tree.Node> {
             (root: T, index?: number): T[];
 
             nodes(root: T, index?: number): T[];

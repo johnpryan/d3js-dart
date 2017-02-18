@@ -3675,7 +3675,7 @@ abstract class tree_Node {
 // End module tree
 @anonymous
 @JS()
-abstract class Tree<T> {
+abstract class Tree<T extends tree_Node> {
   external List<T> call(T root, [num index]);
   external List<T> nodes(T root, [num index]);
   external List<tree_Link<T>> links(List<T> nodes);
