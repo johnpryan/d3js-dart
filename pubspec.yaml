@@ -1,0 +1,13 @@
+name: d3js
+description: D3 bindings generated using dart_js_facade_gen
+version: 1.0.0
+author: John Ryan <john.p.ryan4@gmail.com>
+homepage: https://github.com/johnpryan/d3js-dart
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  js: '>=0.6.0 <1.0.0'
+  func: '>=0.1.0 <1.0.0'
+dev_dependencies:
+  browser: '>=0.10.0 <0.11.0'
+
