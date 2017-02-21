@@ -1,6 +1,7 @@
-import 'package:d3js/d3.dart' as d3;
+import 'package:d3js/d3_v3.dart' as d3;
 import 'package:js/js.dart' as js;
 
+// adapted from https://bl.ocks.org/mbostock/3885304
 main() {
   print("Using d3 version ${d3.version}");
   var selection = d3.select('body');

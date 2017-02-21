@@ -14,7 +14,7 @@ main() {
 ## Generating the library
 
 ```
-dart_js_facade_gen lib/d3.d.ts > lib/d3.dart
+dart_js_facade_gen lib/d3.v3.d.ts > lib/d3.dart
 ```
 
 ## Features and bugs
