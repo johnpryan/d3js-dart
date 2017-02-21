@@ -13,45 +13,6 @@ import "package:func/func.dart";
 /// Last module patch version validated against: 1.0.3
 /// Extend interface 'Selection' by declaration merging with 'd3-selection'
 
-// Module d3-selection
-/// A D3 Selection of elements.
-/// The first generic "GElement" refers to the type of the selected element(s).
-/// The second generic "Datum" refers to the type of the datum of a selected element(s).
-/// The third generic "PElement" refers to the type of the parent element(s) in the D3 selection.
-/// The fourth generic "PDatum" refers to the type of the datum of the parent element(s).
-@anonymous
-@JS()
-abstract class Selection<
-    GElement extends dynamic /*Element|EnterElement|Document|Window|Null*/,
-    Datum,
-    PElement extends dynamic /*Element|EnterElement|Document|Window|Null*/,
-    PDatum> {
-  /// Interrupts the active transition of the specified name on the selected elements, and cancels any pending transitions with the specified name, if any.
-  /// If a name is not specified, null is used.
-  /// IMPORTANT: Interrupting a transition on an element has no effect on any transitions on any descendant elements.
-  /// For example, an axis transition consists of multiple independent, synchronized transitions on the descendants of the axis G element
-  /// (the tick lines, the tick labels, the domain path, etc.). To interrupt the axis transition, you must therefore interrupt the descendants.
-  external Transition<GElement, Datum, PElement, PDatum> interrupt(
-      [String name]);
-
-  /// Returns a new transition on the given selection with the specified name. If a name is not specified, null is used.
-  /// The new transition is only exclusive with other transitions of the same name.
-  /*external Transition<GElement, Datum, PElement, PDatum> transition(
-    [String name]);*/
-  /// Returns a new transition on the given selection.
-  /// When using a transition instance, the returned transition has the same id and name as the specified transition.
-  /// If a transition with the same id already exists on a selected element, the existing transition is returned for that element.
-  /// Otherwise, the timing of the returned transition is inherited from the existing transition of the same id on the nearest ancestor of each selected element.
-  /// Thus, this method can be used to synchronize a transition across multiple selections,
-  /// or to re-select a transition for specific elements and modify its configuration.
-  /// If the specified transition is not found on a selected node or its ancestors (such as if the transition already ended),
-  /// the default timing parameters are used; however, in a future release, this will likely be changed to throw an error.
-  /*external Transition<GElement,Datum,PElement,PDatum> transition(Transition<Element|EnterElement|Document|Window|Null,dynamic,dynamic,dynamic> transition);*/
-  external Transition<GElement, Datum, PElement, PDatum> transition(
-      [dynamic /*String|Transition<Element|EnterElement|Document|Window|Null,dynamic,dynamic,dynamic>*/ name_transition]);
-}
-
-// End module d3-selection
 /// Return the active transition on the specified node with the specified name, if any.
 /// If no name is specified, null is used. Returns null if there is no such active transition on the specified node.
 /// This method is useful for creating chained transitions.

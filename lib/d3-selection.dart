@@ -41,7 +41,7 @@ abstract class EnterElement {
   external Node appendChild(Node newChild);
   external Node insertBefore(Node newChild, Node refChild);
   external Element querySelector(String selectors);
-  external NodeListOf<Element> querySelectorAll(String selectors);
+  external List<Element> querySelectorAll(String selectors);
 }
 
 /// Container element type usable for mouse/touch functions
@@ -785,6 +785,6 @@ external Func0<dynamic/*=DescElement*/ >
 /// Given the specified selector, returns a function which returns all descendants of "this" element that match the specified selector.
 /// The generic refers to the type of the returned descendant element.
 @JS()
-external Func0<NodeListOf<dynamic/*=DescElement*/ >>
+external Func0<List<dynamic/*=DescElement*/ >>
     selectorAll/*<DescElement extends Element>*/(String selector);
 

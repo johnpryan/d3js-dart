@@ -2,7 +2,7 @@
 library node_modules._types.d3_shape;
 
 import "package:js/js.dart";
-import "dart:html" show CanvasRenderingContext2D, CanvasPathMethods;
+import "dart:html" show CanvasRenderingContext2D, Path2D;
 import "package:func/func.dart";
 import "d3-path.dart" show Path;
 
@@ -1266,7 +1266,7 @@ external set curveStepBefore(CurveFactory v);
 abstract class SymbolType {
   /// Renders this symbol type to the specified context with the specified size in square pixels. The context implements the CanvasPathMethods interface.
   /// (Note that this is a subset of the CanvasRenderingContext2D interface!)
-  external void draw(CanvasPathMethods context, num size);
+  external void draw(Path2D context, num size);
 }
 
 /// A symbol generator.

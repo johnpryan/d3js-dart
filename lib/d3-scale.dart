@@ -333,7 +333,7 @@ abstract class ScaleLogarithmic<Range, Output>
   /// If the domain has more than two values, nicing the domain only affects the first and last value.
   /// Nicing a scale only modifies the current domain; it does not automatically nice domains that are subsequently set using continuous.domain.
   /// You must re-nice the scale after setting the new domain, if desired.
-  external ScaleLogarithmic nice();
+  external ScaleLogarithmic nice([num count]);
 
   /// Returns the current base, which defaults to 10.
   /*external num base();*/
