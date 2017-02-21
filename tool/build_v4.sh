@@ -3,7 +3,7 @@
 # Install the v4 definitions by running:
 # npm install @types/d3 --save
 
-dart_js_facade_gen node_modules/@types/d3/index.d.ts > lib/d3.dart
+dart_js_facade_gen node_modules/@types/d3/index.d.ts > lib/d3_v4.dart
 dart_js_facade_gen node_modules/@types/d3-array/index.d.ts > lib/d3-array.dart
 dart_js_facade_gen node_modules/@types/d3-axis/index.d.ts > lib/d3-axis.dart
 dart_js_facade_gen node_modules/@types/d3-brush/index.d.ts > lib/d3-brush.dart
